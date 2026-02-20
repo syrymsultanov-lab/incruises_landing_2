@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InCruises + SYSTEM V2 — Круизы мечты с AI-системой роста</title>
+  <meta name="description" content="Присоединяйтесь к InCruises и получите уникальную AI-систему SYSTEM V2 для роста вашей команды. Круизы со скидкой до 50%.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <div class="logo__mark">
+          <svg viewBox="0 0 36 36" fill="none">
+            <path d="M18 2L22 12H32L24 18L28 28L18 22L8 28L12 18L4 12H14L18 2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <circle cx="18" cy="18" r="6" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="logo__text">
+          <span class="logo__name">InCruises</span>
+          <span class="logo__system">SYSTEM V2</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav__link" data-ru="О программе" data-en="About">О программе</a>
+        <a href="#experience" class="nav__link" data-ru="Впечатления" data-en="Experience">Впечатления</a>
+        <a href="#system" class="nav__link" data-ru="SYSTEM V2" data-en="SYSTEM V2">SYSTEM V2</a>
+        <a href="#how" class="nav__link" data-ru="Как начать" data-en="How to Start">Как начать</a>
+        <a href="#reviews" class="nav__link" data-ru="Отзывы" data-en="Reviews">Отзывы</a>
+        <a href="#join" class="nav__link" data-ru="Вступить" data-en="Join">Вступить</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang-btn" id="langSwitch" aria-label="Switch language">
+          <span class="lang-btn__active">RU</span>
+          <span class="lang-btn__sep">/</span>
+          <span class="lang-btn__inactive">EN</span>
+        </button>
+        <a href="#join" class="btn btn--accent btn--sm" data-ru="Начать" data-en="Start">Начать</a>
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero-sunset.png" alt="Cruise ship sailing at sunset" loading="eager">
+      <div class="hero__gradient"></div>
+    </div>
+
+    <div class="hero__particles" id="particles"></div>
+
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <div class="hero__badge" data-ru="Единственная AI-система в мире круизного MLM" data-en="The only AI system in cruise MLM worldwide">
+          <span class="hero__badge-dot"></span>
+          Единственная AI-система в мире круизного MLM
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__title-line" data-ru="Круизы мечты" data-en="Dream Cruises">Круизы мечты</span>
+          <span class="hero__title-accent" data-ru="+ AI-система роста" data-en="+ AI Growth System">+ AI-система роста</span>
+        </h1>
+
+        <p class="hero__desc" data-ru="Присоединяйтесь к InCruises — путешествуйте на лучших лайнерах мира со скидкой до 50%. И получите готовую AI-систему SYSTEM V2 для автоматического роста вашей команды." data-en="Join InCruises — travel on the world's best cruise ships at up to 50% off. And get the ready-made AI system SYSTEM V2 for automatic team growth.">
+          Присоединяйтесь к InCruises — путешествуйте на лучших лайнерах мира со скидкой до 50%. И получите готовую AI-систему SYSTEM V2 для автоматического роста вашей команды.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#join" class="btn btn--accent btn--lg" data-ru="Присоединиться" data-en="Join Now">
+            Присоединиться
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#system" class="btn btn--glass btn--lg" data-ru="Что такое SYSTEM V2?" data-en="What is SYSTEM V2?">Что такое SYSTEM V2?</a>
+        </div>
+      </div>
+
+      <div class="hero__metrics">
+        <div class="hero__metric glass-card">
+          <span class="hero__metric-value" data-count="500000">0</span>
+          <span class="hero__metric-label" data-ru="членов клуба" data-en="club members">членов клуба</span>
+        </div>
+        <div class="hero__metric glass-card">
+          <span class="hero__metric-value" data-count="200">0</span>
+          <span class="hero__metric-label" data-ru="стран мира" data-en="countries">стран мира</span>
+        </div>
+        <div class="hero__metric glass-card">
+          <span class="hero__metric-value hero__metric-value--pct" data-count="50">0</span>
+          <span class="hero__metric-label" data-ru="экономия на круизах" data-en="savings on cruises">экономия на круизах</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <a href="#about" aria-label="Scroll down">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT INCRUISES ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__eyebrow" data-ru="Крыло первое — Эмоции" data-en="Wing One — Emotions">Крыло первое — Эмоции</div>
+      <h2 class="section__title section__title--split">
+        <span data-ru="Мир роскошных" data-en="The World of">Мир роскошных</span>
+        <em data-ru="круизов" data-en="Luxury Cruises">круизов</em>
+      </h2>
+      <p class="section__lead" data-ru="InCruises — это членский клуб, объединяющий более 500 000 путешественников в 200+ странах. Мы делаем круизы доступными каждому." data-en="InCruises is a membership club uniting over 500,000 travelers in 200+ countries. We make cruises affordable for everyone.">
+        InCruises — это членский клуб, объединяющий более 500 000 путешественников в 200+ странах. Мы делаем круизы доступными каждому.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE GALLERY ===== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="experience__grid">
+        <div class="experience__card experience__card--hero reveal" data-delay="0">
+          <img src="images/tropical-port.png" alt="Tropical port with cruise ship" loading="lazy">
+          <div class="experience__card-content">
+            <span class="experience__card-tag" data-ru="Карибы • Средиземноморье • Азия" data-en="Caribbean • Mediterranean • Asia">Карибы • Средиземноморье • Азия</span>
+            <h3 data-ru="1000+ маршрутов по всему миру" data-en="1000+ Routes Worldwide">1000+ маршрутов по всему миру</h3>
+          </div>
+        </div>
+
+        <div class="experience__card reveal" data-delay="100">
+          <img src="images/suite-interior.png" alt="Luxury cruise suite" loading="lazy">
+          <div class="experience__card-content">
+            <h3 data-ru="Каюты класса люкс" data-en="Luxury Suites">Каюты класса люкс</h3>
+          </div>
+        </div>
+
+        <div class="experience__card reveal" data-delay="200">
+          <img src="images/restaurant-evening.png" alt="Fine dining on cruise" loading="lazy">
+          <div class="experience__card-content">
+            <h3 data-ru="Рестораны мирового уровня" data-en="World-Class Dining">Рестораны мирового уровня</h3>
+          </div>
+        </div>
+
+        <div class="experience__card reveal" data-delay="300">
+          <img src="images/pool-deck.png" alt="Pool deck on cruise ship" loading="lazy">
+          <div class="experience__card-content">
+            <h3 data-ru="Бассейны и SPA на палубе" data-en="Pools & SPA on Deck">Бассейны и SPA на палубе</h3>
+          </div>
+        </div>
+
+        <div class="experience__card reveal" data-delay="400">
+          <img src="images/luxury-hotel.png" alt="Luxury hotel resort" loading="lazy">
+          <div class="experience__card-content">
+            <h3 data-ru="5-звёздочные отели на берегу" data-en="5-Star Hotels Ashore">5-звёздочные отели на берегу</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SYSTEM V2 — THE AI WING ===== -->
+  <section class="section system" id="system">
+    <div class="container">
+      <div class="section__eyebrow" data-ru="Крыло второе — Интеллект" data-en="Wing Two — Intelligence">Крыло второе — Интеллект</div>
+      <h2 class="section__title section__title--split">
+        <span data-ru="SYSTEM V2 —" data-en="SYSTEM V2 —">SYSTEM V2 —</span>
+        <em data-ru="твоё AI-оружие" data-en="Your AI Weapon">твоё AI-оружие</em>
+      </h2>
+      <p class="section__lead" data-ru="Обычный рекрутёр говорит: «присоединяйся к InCruises». Мы говорим: «присоединяйся И получи готовую AI-систему для роста команды, которой нет больше нигде»." data-en="A regular recruiter says: 'join InCruises'. We say: 'join AND get a ready-made AI system for team growth that doesn't exist anywhere else'.">
+        Обычный рекрутёр говорит: «присоединяйся к InCruises». Мы говорим: «присоединяйся И получи готовую AI-систему для роста команды, которой нет больше нигде».
+      </p>
+
+      <div class="system__grid">
+        <div class="system__card glass-card reveal" data-delay="0">
+          <div class="system__card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M24 14V34M17 20L24 14L31 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="28" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3 data-ru="AI-анализ лидов" data-en="AI Lead Analysis">AI-анализ лидов</h3>
+          <p data-ru="Система автоматически анализирует каждого кандидата и подсказывает лучший подход к нему" data-en="The system automatically analyzes each candidate and suggests the best approach">Система автоматически анализирует каждого кандидата и подсказывает лучший подход к нему</p>
+        </div>
+
+        <div class="system__card glass-card reveal" data-delay="100">
+          <div class="system__card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M16 20H32M16 28H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="34" cy="34" r="8" fill="var(--color-emerald)" stroke="currentColor" stroke-width="1.5"/><path d="M31 34L33 36L37 32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-ru="CRM-система" data-en="CRM System">CRM-система</h3>
+          <p data-ru="Полная база контактов, история взаимодействий, статусы — всё в одном месте для всей команды" data-en="Complete contact database, interaction history, statuses — all in one place for the entire team">Полная база контактов, история взаимодействий, статусы — всё в одном месте для всей команды</p>
+        </div>
+
+        <div class="system__card glass-card reveal" data-delay="200">
+          <div class="system__card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 36L16 24L24 30L32 18L40 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="40" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M8 40H40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-ru="Автоматизация роста" data-en="Growth Automation">Автоматизация роста</h3>
+          <p data-ru="n8n оркестратор + AI = автоматические follow-up, уведомления партнёрам, многоканальная коммуникация" data-en="n8n orchestrator + AI = automatic follow-ups, partner notifications, multi-channel communication">n8n оркестратор + AI = автоматические follow-up, уведомления партнёрам, многоканальная коммуникация</p>
+        </div>
+
+        <div class="system__card glass-card reveal" data-delay="300">
+          <div class="system__card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8C15.2 8 8 15.2 8 24C8 32.8 15.2 40 24 40C32.8 40 40 32.8 40 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M24 8C28 8 31 15.2 31 24" stroke="currentColor" stroke-width="1.5"/><path d="M24 8C20 8 17 15.2 17 24C17 32.8 20 40 24 40" stroke="currentColor" stroke-width="1.5"/><path d="M10 18H38" stroke="currentColor" stroke-width="1"/><path d="M10 30H38" stroke="currentColor" stroke-width="1"/><circle cx="38" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M36 12H40M38 10V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-ru="Дупликация команды" data-en="Team Duplication">Дупликация команды</h3>
+          <p data-ru="Каждый новый партнёр получает такую же систему. Это масштабируется бесконечно и работает 24/7" data-en="Every new partner gets the same system. It scales infinitely and works 24/7">Каждый новый партнёр получает такую же систему. Это масштабируется бесконечно и работает 24/7</p>
+        </div>
+      </div>
+
+      <!-- Architecture diagram -->
+      <div class="system__arch reveal" data-delay="200">
+        <div class="section__eyebrow" data-ru="Как это работает" data-en="How It Works">Как это работает</div>
+        <div class="system__flow">
+          <div class="system__flow-step glass-card">
+            <span class="system__flow-num">01</span>
+            <span data-ru="Лид заполняет форму" data-en="Lead fills the form">Лид заполняет форму</span>
+          </div>
+          <div class="system__flow-arrow">
+            <svg width="32" height="16" viewBox="0 0 32 16" fill="none"><path d="M0 8H28M28 8L22 2M28 8L22 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="system__flow-step glass-card">
+            <span class="system__flow-num">02</span>
+            <span data-ru="Данные → Supabase" data-en="Data → Supabase">Данные → Supabase</span>
+          </div>
+          <div class="system__flow-arrow">
+            <svg width="32" height="16" viewBox="0 0 32 16" fill="none"><path d="M0 8H28M28 8L22 2M28 8L22 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="system__flow-step glass-card">
+            <span class="system__flow-num">03</span>
+            <span data-ru="n8n → AI анализ" data-en="n8n → AI Analysis">n8n → AI анализ</span>
+          </div>
+          <div class="system__flow-arrow">
+            <svg width="32" height="16" viewBox="0 0 32 16" fill="none"><path d="M0 8H28M28 8L22 2M28 8L22 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="system__flow-step glass-card">
+            <span class="system__flow-num">04</span>
+            <span data-ru="Уведомление партнёру" data-en="Partner Notification">Уведомление партнёру</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW TO START ===== -->
+  <section class="section how" id="how">
+    <div class="container">
+      <div class="section__eyebrow" data-ru="Три шага" data-en="Three Steps">Три шага</div>
+      <h2 class="section__title section__title--split">
+        <span data-ru="Как" data-en="How to">Как</span>
+        <em data-ru="начать?" data-en="Get Started?">начать?</em>
+      </h2>
+
+      <div class="how__steps">
+        <div class="how__step reveal" data-delay="0">
+          <div class="how__step-num">01</div>
+          <div class="how__step-content">
+            <h3 data-ru="Регистрация" data-en="Registration">Регистрация</h3>
+            <p data-ru="Оставьте заявку на этой странице. Мы свяжемся с вами и поможем зарегистрироваться в InCruises за 2 минуты — бесплатно." data-en="Leave a request on this page. We'll contact you and help you register with InCruises in 2 minutes — for free.">Оставьте заявку на этой странице. Мы свяжемся с вами и поможем зарегистрироваться в InCruises за 2 минуты — бесплатно.</p>
+          </div>
+        </div>
+        <div class="how__step reveal" data-delay="150">
+          <div class="how__step-num">02</div>
+          <div class="how__step-content">
+            <h3 data-ru="Накопление Cruise Dollars" data-en="Accumulate Cruise Dollars">Накопление Cruise Dollars</h3>
+            <p data-ru="Вносите от $100/мес и получайте удвоенные Cruise Dollars. Нет срока давности — копите в своём темпе." data-en="Contribute from $100/month and receive doubled Cruise Dollars. No expiration — accumulate at your own pace.">Вносите от $100/мес и получайте удвоенные Cruise Dollars. Нет срока давности — копите в своём темпе.</p>
+          </div>
+        </div>
+        <div class="how__step reveal" data-delay="300">
+          <div class="how__step-num">03</div>
+          <div class="how__step-content">
+            <h3 data-ru="Путешествуйте + растите с AI" data-en="Travel + Grow with AI">Путешествуйте + растите с AI</h3>
+            <p data-ru="Выбирайте из 1000+ круизов со скидкой до 50%, а SYSTEM V2 автоматически поможет строить вашу команду и доход." data-en="Choose from 1000+ cruises at up to 50% off, and SYSTEM V2 will automatically help build your team and income.">Выбирайте из 1000+ круизов со скидкой до 50%, а SYSTEM V2 автоматически поможет строить вашу команду и доход.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section__eyebrow" data-ru="Отзывы" data-en="Reviews">Отзывы</div>
+      <h2 class="section__title section__title--split">
+        <span data-ru="Они уже" data-en="They Already">Они уже</span>
+        <em data-ru="в деле" data-en="Made It">в деле</em>
+      </h2>
+
+      <div class="reviews__slider" id="reviewsSlider">
+        <div class="reviews__track">
+          <div class="review glass-card">
+            <div class="review__stars">★★★★★</div>
+            <p class="review__text" data-ru="InCruises изменил наш подход к отпуску. За 2 года — 5 круизов по цене, невозможной без клуба. А SYSTEM V2 помогла привлечь 12 новых партнёров за 3 месяца автоматически!" data-en="InCruises changed our vacation approach. 5 cruises in 2 years at prices impossible without the club. And SYSTEM V2 helped attract 12 new partners in 3 months automatically!">InCruises изменил наш подход к отпуску. За 2 года — 5 круизов по цене, невозможной без клуба. А SYSTEM V2 помогла привлечь 12 новых партнёров за 3 месяца автоматически!</p>
+            <div class="review__author">
+              <div class="review__avatar">АК</div>
+              <div>
+                <strong data-ru="Алексей и Карина" data-en="Alexey & Karina">Алексей и Карина</strong>
+                <span data-ru="Алматы, Казахстан" data-en="Almaty, Kazakhstan">Алматы, Казахстан</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review glass-card">
+            <div class="review__stars">★★★★★</div>
+            <p class="review__text" data-ru="Начал как участник, теперь строю бизнес. Партнёрская программа + SYSTEM V2 = идеальная комбинация. За год вышел на пассивный доход, покрывающий все взносы." data-en="Started as a member, now building a business. Partner program + SYSTEM V2 = perfect combination. Within a year, reached passive income covering all contributions.">Начал как участник, теперь строю бизнес. Партнёрская программа + SYSTEM V2 = идеальная комбинация. За год вышел на пассивный доход, покрывающий все взносы.</p>
+            <div class="review__author">
+              <div class="review__avatar">ДМ</div>
+              <div>
+                <strong data-ru="Дмитрий М." data-en="Dmitry M.">Дмитрий М.</strong>
+                <span data-ru="Москва, Россия" data-en="Moscow, Russia">Москва, Россия</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review glass-card">
+            <div class="review__stars">★★★★★</div>
+            <p class="review__text" data-ru="Семейный круиз по Средиземноморью — лучший отпуск в нашей жизни! Сэкономили $3000 и теперь рассказываем всем друзьям. AI-система сама напоминает о follow-up." data-en="A family Mediterranean cruise — the best vacation ever! Saved $3000 and now telling all friends. The AI system reminds about follow-ups automatically.">Семейный круиз по Средиземноморью — лучший отпуск в нашей жизни! Сэкономили $3000 и теперь рассказываем всем друзьям. AI-система сама напоминает о follow-up.</p>
+            <div class="review__author">
+              <div class="review__avatar">НС</div>
+              <div>
+                <strong data-ru="Нурлан и Сауле" data-en="Nurlan & Saule">Нурлан и Сауле</strong>
+                <span data-ru="Астана, Казахстан" data-en="Astana, Kazakhstan">Астана, Казахстан</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__controls">
+          <button class="reviews__arrow reviews__arrow--prev" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="reviews__dots" id="reviewsDots"></div>
+          <button class="reviews__arrow reviews__arrow--next" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOIN / FORM ===== -->
+  <section class="section join" id="join">
+    <div class="container">
+      <div class="join__grid">
+        <div class="join__info">
+          <div class="section__eyebrow" data-ru="Присоединяйтесь" data-en="Join Us">Присоединяйтесь</div>
+          <h2 class="section__title section__title--split">
+            <span data-ru="Готовы к" data-en="Ready for">Готовы к</span>
+            <em data-ru="новой жизни?" data-en="a New Life?">новой жизни?</em>
+          </h2>
+          <p class="join__desc" data-ru="Оставьте заявку — мы свяжемся с вами и расскажем, как начать путешествовать с InCruises и получить доступ к SYSTEM V2." data-en="Leave a request — we'll contact you and explain how to start traveling with InCruises and get access to SYSTEM V2.">Оставьте заявку — мы свяжемся с вами и расскажем, как начать путешествовать с InCruises и получить доступ к SYSTEM V2.</p>
+
+          <div class="join__perks">
+            <div class="join__perk">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-ru="Бесплатная консультация" data-en="Free consultation">Бесплатная консультация</span>
+            </div>
+            <div class="join__perk">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-ru="Персональный подбор круиза" data-en="Personal cruise selection">Персональный подбор круиза</span>
+            </div>
+            <div class="join__perk">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-ru="Доступ к SYSTEM V2" data-en="Access to SYSTEM V2">Доступ к SYSTEM V2</span>
+            </div>
+            <div class="join__perk">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-ru="Поддержка на каждом этапе" data-en="Support at every step">Поддержка на каждом этапе</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="join__form glass-card" id="leadForm" novalidate>
+          <h3 class="join__form-title" data-ru="Оставить заявку" data-en="Submit Request">Оставить заявку</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="firstName" class="form-input" placeholder=" " required autocomplete="given-name">
+              <label for="firstName" class="form-label" data-ru="Имя *" data-en="First Name *">Имя *</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="lastName" class="form-input" placeholder=" " autocomplete="family-name">
+              <label for="lastName" class="form-label" data-ru="Фамилия" data-en="Last Name">Фамилия</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" class="form-input" placeholder=" " required autocomplete="email">
+            <label for="email" class="form-label">Email *</label>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" id="phone" class="form-input" placeholder=" " required autocomplete="tel">
+            <label for="phone" class="form-label" data-ru="Телефон *" data-en="Phone *">Телефон *</label>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="country" class="form-input" placeholder=" " autocomplete="country-name">
+            <label for="country" class="form-label" data-ru="Страна" data-en="Country">Страна</label>
+          </div>
+
+		<div class="form-group">
+          <input type="text" id="city" class="form-input" placeholder=" " autocomplete="address-level2">
+          <label for="city" class="form-label" data-ru="Город" data-en="City">Город</label>
+        </div>
+
+		<div class="form-row">
+  <div class="form-group">
+    <select id="interest" class="form-input form-select">
+      <option value="" disabled selected>—</option>
+      <option value="travel_for_self" data-ru="Хочу путешествовать сам(а)" data-en="I want to travel myself">Хочу путешествовать сам(а)</option>
+      <option value="travel_with_family" data-ru="Путешествия с семьёй" data-en="Travel with family">Путешествия с семьёй</option>
+      <option value="travel_with_team" data-ru="Путешествия с командой" data-en="Travel with a team">Путешествия с командой</option>
+      <option value="business_opportunity" data-ru="Интересен заработок/партнёрство" data-en="Interested in income/partnership">Интересен заработок/партнёрство</option>
+      <option value="not_sure" data-ru="Пока не уверен(а)" data-en="Not sure yet">Пока не уверен(а)</option>
+    </select>
+    <label for="interest" class="form-label form-label--up" data-ru="Интерес" data-en="Interest">Интерес</label>
+  </div>
+
+  <div class="form-group">
+    <select id="affordability" class="form-input form-select">
+      <option value="" disabled selected>—</option>
+      <option value="low" data-ru="Сейчас нет бюджета" data-en="No budget now">Сейчас нет бюджета</option>
+      <option value="medium" data-ru="Средний бюджет" data-en="Medium budget">Средний бюджет</option>
+      <option value="high" data-ru="Готов(а) инвестировать" data-en="Ready to invest">Готов(а) инвестировать</option>
+      <option value="unknown" data-ru="Не хочу отвечать" data-en="Prefer not to say">Не хочу отвечать</option>
+    </select>
+    <label for="affordability" class="form-label form-label--up" data-ru="Бюджет" data-en="Budget">Бюджет</label>
+  </div>
+</div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <select id="messenger" class="form-input form-select">
+  <option value="" disabled selected>—</option>
+  <option value="whatsapp">WhatsApp</option>
+  <option value="telegram">Telegram</option>
+  <option value="email">Email</option>
+  <option value="instagram">Instagram</option>
+  <option value="facebook">Facebook</option>
+  <option value="phone" data-ru="Звонок" data-en="Phone call">Звонок</option>
+  <option value="viber">Viber</option>
+  <option value="other" data-ru="Другое" data-en="Other">Другое</option>
+</select>
+              <label for="messenger" class="form-label form-label--up" data-ru="Мессенджер" data-en="Messenger">Мессенджер</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="messengerHandle" class="form-input" placeholder=" ">
+              <label for="messengerHandle" class="form-label" data-ru="Ник / номер" data-en="Username / Number">Ник / номер</label>
+            </div>
+          </div>
+
+          <label class="form-checkbox">
+            <input type="checkbox" id="consent" required>
+            <span class="form-checkbox__mark"></span>
+            <span class="form-checkbox__text" data-ru="Я согласен на обработку персональных данных" data-en="I agree to the processing of personal data">Я согласен на обработку персональных данных</span>
+          </label>
+
+          <button type="submit" class="btn btn--accent btn--lg btn--full" id="submitBtn">
+            <span data-ru="Отправить заявку" data-en="Submit Request">Отправить заявку</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer">
+          <div class="logo__mark">
+            <svg viewBox="0 0 36 36" fill="none">
+              <path d="M18 2L22 12H32L24 18L28 28L18 22L8 28L12 18L4 12H14L18 2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="18" cy="18" r="6" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="logo__text">
+            <span class="logo__name">InCruises</span>
+            <span class="logo__system">SYSTEM V2</span>
+          </div>
+        </a>
+        <p class="footer__tagline" data-ru="Круизы мечты + AI-система роста" data-en="Dream cruises + AI growth system">Круизы мечты + AI-система роста</p>
+      </div>
+
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4 data-ru="Навигация" data-en="Navigation">Навигация</h4>
+          <a href="#about" data-ru="О программе" data-en="About">О программе</a>
+          <a href="#system" data-ru="SYSTEM V2" data-en="SYSTEM V2">SYSTEM V2</a>
+          <a href="#how" data-ru="Как начать" data-en="How to Start">Как начать</a>
+          <a href="#join" data-ru="Вступить" data-en="Join">Вступить</a>
+        </div>
+        <div class="footer__col">
+          <h4 data-ru="Контакты" data-en="Contact">Контакты</h4>
+          <a href="tel:+77014066752">+7 (701) 406-67-52</a>
+          <a href="mailto:info@sairateam.com">info@sairateam.com</a>
+          <div class="footer__socials">
+            <a href="#" aria-label="WhatsApp" class="footer__social-link">WA</a>
+            <a href="#" aria-label="Telegram" class="footer__social-link">TG</a>
+            <a href="#" aria-label="Instagram" class="footer__social-link">IG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>&copy; 2025 InCruises + SYSTEM V2</span>
+        <span data-ru="Сайт не является офертой" data-en="This site is not a public offer">Сайт не является офертой</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div class="modal" id="successModal">
+    <div class="modal__bg"></div>
+    <div class="modal__box glass-card">
+      <button class="modal__close" aria-label="Close">&times;</button>
+      <div class="modal__icon">
+        <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2"/><path d="M20 32L28 40L44 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3 data-ru="Заявка отправлена!" data-en="Request Sent!">Заявка отправлена!</h3>
+      <p data-ru="Мы свяжемся с вами в ближайшее время. Добро пожаловать в InCruises!" data-en="We'll contact you shortly. Welcome to InCruises!">Мы свяжемся с вами в ближайшее время. Добро пожаловать в InCruises!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
